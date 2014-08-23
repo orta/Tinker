@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */; };
+		60DC0F5D19A8CB5E0005BAB4 /* RelateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F5C19A8CB5E0005BAB4 /* RelateTests.swift */; };
+		60DC0F6719A8CBA50005BAB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */; };
+		60DC0F6F19A8CE660005BAB4 /* RelateGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */; };
+		60DC0F8119A8D9FD0005BAB4 /* TinkerQuest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60DC0F8D19A8D9FD0005BAB4 /* TinkerQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F8C19A8D9FD0005BAB4 /* TinkerQuestTests.swift */; };
+		60DC0F9019A8D9FD0005BAB4 /* TinkerQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */; };
+		60DC0F9119A8D9FD0005BAB4 /* TinkerQuest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60DC0F9B19A8DA550005BAB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7019A8D45E0005BAB4 /* Room.swift */; };
+		60DC0F9C19A8DA550005BAB4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7219A8D64E0005BAB4 /* Item.swift */; };
+		60DC0F9D19A8DA550005BAB4 /* TinkerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */; };
+		60DC0F9E19A8DA550005BAB4 /* TinkerQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */; };
+		60DC0F9F19A8DB030005BAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */; };
+		60DC0FA119A8DE420005BAB4 /* TQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0FA019A8DE420005BAB4 /* TQ.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60DC0F5719A8CB5E0005BAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DC0F4319A8CB5E0005BAB4;
+			remoteInfo = Relate;
+		};
+		60DC0F8719A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DC0F4319A8CB5E0005BAB4;
+			remoteInfo = Relate;
+		};
+		60DC0F8E19A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DC0F7B19A8D9FD0005BAB4;
+			remoteInfo = TinkerQuest;
+		};
+		60DC0F9219A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DC0F7B19A8D9FD0005BAB4;
+			remoteInfo = TinkerQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60DC0F9719A8D9FD0005BAB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60DC0F9119A8D9FD0005BAB4 /* TinkerQuest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60DC0F4419A8CB5E0005BAB4 /* Relate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DC0F4819A8CB5E0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		60DC0F5619A8CB5E0005BAB4 /* RelateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DC0F5B19A8CB5E0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DC0F5C19A8CB5E0005BAB4 /* RelateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelateTests.swift; sourceTree = "<group>"; };
+		60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinkerQuest.swift; sourceTree = "<group>"; };
+		60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateGame.swift; sourceTree = "<group>"; };
+		60DC0F7019A8D45E0005BAB4 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Game/Room.swift; sourceTree = "<group>"; };
+		60DC0F7219A8D64E0005BAB4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Game/Item.swift; sourceTree = "<group>"; };
+		60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinkerObject.swift; path = Game/TinkerObject.swift; sourceTree = "<group>"; };
+		60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TinkerGround.playground; sourceTree = "<group>"; };
+		60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinkerQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DC0F7F19A8D9FD0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinkerQuest.h; sourceTree = "<group>"; };
+		60DC0F8619A8D9FD0005BAB4 /* TinkerQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkerQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DC0F8B19A8D9FD0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DC0F8C19A8D9FD0005BAB4 /* TinkerQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkerQuestTests.swift; sourceTree = "<group>"; };
+		60DC0FA019A8DE420005BAB4 /* TQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TQ.swift; path = TinkerQuest/TQ.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60DC0F4119A8CB5E0005BAB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F9019A8D9FD0005BAB4 /* TinkerQuest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F5319A8CB5E0005BAB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F7819A8D9FD0005BAB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F8319A8D9FD0005BAB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60DC0F3B19A8CB5E0005BAB4 = {
+			isa = PBXGroup;
+			children = (
+				60DC0F4619A8CB5E0005BAB4 /* Relate */,
+				60DC0F5919A8CB5E0005BAB4 /* RelateTests */,
+				60DC0F7D19A8D9FD0005BAB4 /* TinkerQuest */,
+				60DC0F8919A8D9FD0005BAB4 /* TinkerQuestTests */,
+				60DC0F4519A8CB5E0005BAB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60DC0F4519A8CB5E0005BAB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F4419A8CB5E0005BAB4 /* Relate.app */,
+				60DC0F5619A8CB5E0005BAB4 /* RelateTests.xctest */,
+				60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */,
+				60DC0F8619A8D9FD0005BAB4 /* TinkerQuestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60DC0F4619A8CB5E0005BAB4 /* Relate */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */,
+				60DC0F6D19A8CE570005BAB4 /* Game */,
+				60DC0F6819A8CBD00005BAB4 /* Library */,
+				60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */,
+				60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */,
+				60DC0F4719A8CB5E0005BAB4 /* Supporting Files */,
+				60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */,
+			);
+			path = Relate;
+			sourceTree = "<group>";
+		};
+		60DC0F4719A8CB5E0005BAB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F4819A8CB5E0005BAB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60DC0F5919A8CB5E0005BAB4 /* RelateTests */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F5C19A8CB5E0005BAB4 /* RelateTests.swift */,
+				60DC0F5A19A8CB5E0005BAB4 /* Supporting Files */,
+			);
+			path = RelateTests;
+			sourceTree = "<group>";
+		};
+		60DC0F5A19A8CB5E0005BAB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F5B19A8CB5E0005BAB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60DC0F6819A8CBD00005BAB4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F7019A8D45E0005BAB4 /* Room.swift */,
+				60DC0F7219A8D64E0005BAB4 /* Item.swift */,
+				60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */,
+				60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */,
+				60DC0FA019A8DE420005BAB4 /* TQ.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		60DC0F6D19A8CE570005BAB4 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		60DC0F7D19A8D9FD0005BAB4 /* TinkerQuest */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */,
+				60DC0F7E19A8D9FD0005BAB4 /* Supporting Files */,
+			);
+			path = TinkerQuest;
+			sourceTree = "<group>";
+		};
+		60DC0F7E19A8D9FD0005BAB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F7F19A8D9FD0005BAB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60DC0F8919A8D9FD0005BAB4 /* TinkerQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F8C19A8D9FD0005BAB4 /* TinkerQuestTests.swift */,
+				60DC0F8A19A8D9FD0005BAB4 /* Supporting Files */,
+			);
+			path = TinkerQuestTests;
+			sourceTree = "<group>";
+		};
+		60DC0F8A19A8D9FD0005BAB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60DC0F8B19A8D9FD0005BAB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60DC0F7919A8D9FD0005BAB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F8119A8D9FD0005BAB4 /* TinkerQuest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		60DC0F4319A8CB5E0005BAB4 /* Relate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60DC0F6019A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "Relate" */;
+			buildPhases = (
+				60DC0F4019A8CB5E0005BAB4 /* Sources */,
+				60DC0F4119A8CB5E0005BAB4 /* Frameworks */,
+				60DC0F4219A8CB5E0005BAB4 /* Resources */,
+				60DC0F9719A8D9FD0005BAB4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60DC0F8F19A8D9FD0005BAB4 /* PBXTargetDependency */,
+				60DC0F9319A8D9FD0005BAB4 /* PBXTargetDependency */,
+			);
+			name = Relate;
+			productName = Relate;
+			productReference = 60DC0F4419A8CB5E0005BAB4 /* Relate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60DC0F5519A8CB5E0005BAB4 /* RelateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60DC0F6319A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "RelateTests" */;
+			buildPhases = (
+				60DC0F5219A8CB5E0005BAB4 /* Sources */,
+				60DC0F5319A8CB5E0005BAB4 /* Frameworks */,
+				60DC0F5419A8CB5E0005BAB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60DC0F5819A8CB5E0005BAB4 /* PBXTargetDependency */,
+			);
+			name = RelateTests;
+			productName = RelateTests;
+			productReference = 60DC0F5619A8CB5E0005BAB4 /* RelateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60DC0F9419A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuest" */;
+			buildPhases = (
+				60DC0F7719A8D9FD0005BAB4 /* Sources */,
+				60DC0F7819A8D9FD0005BAB4 /* Frameworks */,
+				60DC0F7919A8D9FD0005BAB4 /* Headers */,
+				60DC0F7A19A8D9FD0005BAB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinkerQuest;
+			productName = TinkerQuest;
+			productReference = 60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60DC0F8519A8D9FD0005BAB4 /* TinkerQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60DC0F9819A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuestTests" */;
+			buildPhases = (
+				60DC0F8219A8D9FD0005BAB4 /* Sources */,
+				60DC0F8319A8D9FD0005BAB4 /* Frameworks */,
+				60DC0F8419A8D9FD0005BAB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60DC0F8819A8D9FD0005BAB4 /* PBXTargetDependency */,
+			);
+			name = TinkerQuestTests;
+			productName = TinkerQuestTests;
+			productReference = 60DC0F8619A8D9FD0005BAB4 /* TinkerQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60DC0F3C19A8CB5E0005BAB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Orta;
+				TargetAttributes = {
+					60DC0F4319A8CB5E0005BAB4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					60DC0F5519A8CB5E0005BAB4 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 60DC0F4319A8CB5E0005BAB4;
+					};
+					60DC0F7B19A8D9FD0005BAB4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					60DC0F8519A8D9FD0005BAB4 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 60DC0F4319A8CB5E0005BAB4;
+					};
+				};
+			};
+			buildConfigurationList = 60DC0F3F19A8CB5E0005BAB4 /* Build configuration list for PBXProject "Relate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60DC0F3B19A8CB5E0005BAB4;
+			productRefGroup = 60DC0F4519A8CB5E0005BAB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60DC0F4319A8CB5E0005BAB4 /* Relate */,
+				60DC0F5519A8CB5E0005BAB4 /* RelateTests */,
+				60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */,
+				60DC0F8519A8D9FD0005BAB4 /* TinkerQuestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60DC0F4219A8CB5E0005BAB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F5419A8CB5E0005BAB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F7A19A8D9FD0005BAB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F8419A8D9FD0005BAB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60DC0F4019A8CB5E0005BAB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F9F19A8DB030005BAB4 /* AppDelegate.swift in Sources */,
+				60DC0F6719A8CBA50005BAB4 /* GameViewController.swift in Sources */,
+				60DC0F6F19A8CE660005BAB4 /* RelateGame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F5219A8CB5E0005BAB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F5D19A8CB5E0005BAB4 /* RelateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F7719A8D9FD0005BAB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F9B19A8DA550005BAB4 /* Room.swift in Sources */,
+				60DC0F9C19A8DA550005BAB4 /* Item.swift in Sources */,
+				60DC0F9D19A8DA550005BAB4 /* TinkerObject.swift in Sources */,
+				60DC0FA119A8DE420005BAB4 /* TQ.swift in Sources */,
+				60DC0F9E19A8DA550005BAB4 /* TinkerQuest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DC0F8219A8D9FD0005BAB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC0F8D19A8D9FD0005BAB4 /* TinkerQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60DC0F5819A8CB5E0005BAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60DC0F4319A8CB5E0005BAB4 /* Relate */;
+			targetProxy = 60DC0F5719A8CB5E0005BAB4 /* PBXContainerItemProxy */;
+		};
+		60DC0F8819A8D9FD0005BAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60DC0F4319A8CB5E0005BAB4 /* Relate */;
+			targetProxy = 60DC0F8719A8D9FD0005BAB4 /* PBXContainerItemProxy */;
+		};
+		60DC0F8F19A8D9FD0005BAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */;
+			targetProxy = 60DC0F8E19A8D9FD0005BAB4 /* PBXContainerItemProxy */;
+		};
+		60DC0F9319A8D9FD0005BAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */;
+			targetProxy = 60DC0F9219A8D9FD0005BAB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60DC0F5E19A8CB5E0005BAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60DC0F5F19A8CB5E0005BAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60DC0F6119A8CB5E0005BAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Relate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60DC0F6219A8CB5E0005BAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Relate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		60DC0F6419A8CB5E0005BAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RelateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
+			};
+			name = Debug;
+		};
+		60DC0F6519A8CB5E0005BAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RelateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
+			};
+			name = Release;
+		};
+		60DC0F9519A8D9FD0005BAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TinkerQuest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60DC0F9619A8D9FD0005BAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TinkerQuest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60DC0F9919A8D9FD0005BAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TinkerQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
+			};
+			name = Debug;
+		};
+		60DC0F9A19A8D9FD0005BAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TinkerQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60DC0F3F19A8CB5E0005BAB4 /* Build configuration list for PBXProject "Relate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DC0F5E19A8CB5E0005BAB4 /* Debug */,
+				60DC0F5F19A8CB5E0005BAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60DC0F6019A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "Relate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DC0F6119A8CB5E0005BAB4 /* Debug */,
+				60DC0F6219A8CB5E0005BAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60DC0F6319A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "RelateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DC0F6419A8CB5E0005BAB4 /* Debug */,
+				60DC0F6519A8CB5E0005BAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60DC0F9419A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DC0F9519A8D9FD0005BAB4 /* Debug */,
+				60DC0F9619A8D9FD0005BAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60DC0F9819A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DC0F9919A8D9FD0005BAB4 /* Debug */,
+				60DC0F9A19A8D9FD0005BAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
+}
