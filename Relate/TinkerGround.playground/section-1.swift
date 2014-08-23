@@ -1,5 +1,3 @@
-// Playground - noun: a place where people can play
-
 import TinkerQuest
 
 class RelateGame: NSObject, Game {
@@ -18,8 +16,9 @@ class RelateGame: NSObject, Game {
 class InitialRoom: Room {}
 
 let relate = RelateGame()
-let dote = TinkerQuest(game:relate)
+let tinker = TinkerQuest(game:relate)
+let cmd = CommandInterpreter(tinker:tinker)
 
+tinker.startGame()
 
-
-dote.startGame()
+cmd.parse("help");

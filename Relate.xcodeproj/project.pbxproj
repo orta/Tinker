@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		606E591919A8E31700C2B979 /* CommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606E591819A8E31700C2B979 /* CommandInterpreter.swift */; };
 		60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */; };
-		60DC0F5D19A8CB5E0005BAB4 /* RelateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F5C19A8CB5E0005BAB4 /* RelateTests.swift */; };
 		60DC0F6719A8CBA50005BAB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */; };
 		60DC0F6F19A8CE660005BAB4 /* RelateGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */; };
 		60DC0F8119A8D9FD0005BAB4 /* TinkerQuest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,13 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		60DC0F5719A8CB5E0005BAB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60DC0F4319A8CB5E0005BAB4;
-			remoteInfo = Relate;
-		};
 		60DC0F8719A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
@@ -69,27 +62,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		606E591819A8E31700C2B979 /* CommandInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInterpreter.swift; sourceTree = "<group>"; };
 		60DC0F4419A8CB5E0005BAB4 /* Relate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC0F4819A8CB5E0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		60DC0F5619A8CB5E0005BAB4 /* RelateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60DC0F5B19A8CB5E0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60DC0F5C19A8CB5E0005BAB4 /* RelateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelateTests.swift; sourceTree = "<group>"; };
 		60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinkerQuest.swift; sourceTree = "<group>"; };
 		60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateGame.swift; sourceTree = "<group>"; };
-		60DC0F7019A8D45E0005BAB4 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Game/Room.swift; sourceTree = "<group>"; };
-		60DC0F7219A8D64E0005BAB4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Game/Item.swift; sourceTree = "<group>"; };
-		60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinkerObject.swift; path = Game/TinkerObject.swift; sourceTree = "<group>"; };
-		60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TinkerGround.playground; sourceTree = "<group>"; };
+		60DC0F7019A8D45E0005BAB4 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		60DC0F7219A8D64E0005BAB4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinkerObject.swift; sourceTree = "<group>"; };
+		60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = TinkerGround.playground; path = Relate/TinkerGround.playground; sourceTree = "<group>"; };
 		60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinkerQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC0F7F19A8D9FD0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinkerQuest.h; sourceTree = "<group>"; };
 		60DC0F8619A8D9FD0005BAB4 /* TinkerQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkerQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC0F8B19A8D9FD0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DC0F8C19A8D9FD0005BAB4 /* TinkerQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkerQuestTests.swift; sourceTree = "<group>"; };
-		60DC0FA019A8DE420005BAB4 /* TQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TQ.swift; path = TinkerQuest/TQ.swift; sourceTree = "<group>"; };
+		60DC0FA019A8DE420005BAB4 /* TQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC0F9019A8D9FD0005BAB4 /* TinkerQuest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		60DC0F5319A8CB5E0005BAB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +112,8 @@
 		60DC0F3B19A8CB5E0005BAB4 = {
 			isa = PBXGroup;
 			children = (
+				60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */,
 				60DC0F4619A8CB5E0005BAB4 /* Relate */,
-				60DC0F5919A8CB5E0005BAB4 /* RelateTests */,
 				60DC0F7D19A8D9FD0005BAB4 /* TinkerQuest */,
 				60DC0F8919A8D9FD0005BAB4 /* TinkerQuestTests */,
 				60DC0F4519A8CB5E0005BAB4 /* Products */,
@@ -140,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				60DC0F4419A8CB5E0005BAB4 /* Relate.app */,
-				60DC0F5619A8CB5E0005BAB4 /* RelateTests.xctest */,
 				60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */,
 				60DC0F8619A8D9FD0005BAB4 /* TinkerQuestTests.xctest */,
 			);
@@ -150,13 +133,10 @@
 		60DC0F4619A8CB5E0005BAB4 /* Relate */ = {
 			isa = PBXGroup;
 			children = (
-				60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */,
-				60DC0F6D19A8CE570005BAB4 /* Game */,
-				60DC0F6819A8CBD00005BAB4 /* Library */,
 				60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */,
+				60DC0F6D19A8CE570005BAB4 /* Game */,
 				60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */,
 				60DC0F4719A8CB5E0005BAB4 /* Supporting Files */,
-				60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */,
 			);
 			path = Relate;
 			sourceTree = "<group>";
@@ -166,24 +146,7 @@
 			children = (
 				60DC0F4819A8CB5E0005BAB4 /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		60DC0F5919A8CB5E0005BAB4 /* RelateTests */ = {
-			isa = PBXGroup;
-			children = (
-				60DC0F5C19A8CB5E0005BAB4 /* RelateTests.swift */,
-				60DC0F5A19A8CB5E0005BAB4 /* Supporting Files */,
-			);
-			path = RelateTests;
-			sourceTree = "<group>";
-		};
-		60DC0F5A19A8CB5E0005BAB4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				60DC0F5B19A8CB5E0005BAB4 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		60DC0F6819A8CBD00005BAB4 /* Library */ = {
@@ -194,13 +157,15 @@
 				60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */,
 				60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */,
 				60DC0FA019A8DE420005BAB4 /* TQ.swift */,
+				606E591819A8E31700C2B979 /* CommandInterpreter.swift */,
 			);
-			name = Library;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		60DC0F6D19A8CE570005BAB4 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */,
 				60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */,
 			);
 			path = Game;
@@ -209,6 +174,7 @@
 		60DC0F7D19A8D9FD0005BAB4 /* TinkerQuest */ = {
 			isa = PBXGroup;
 			children = (
+				60DC0F6819A8CBD00005BAB4 /* Library */,
 				60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */,
 				60DC0F7E19A8D9FD0005BAB4 /* Supporting Files */,
 			);
@@ -220,7 +186,7 @@
 			children = (
 				60DC0F7F19A8D9FD0005BAB4 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		60DC0F8919A8D9FD0005BAB4 /* TinkerQuestTests */ = {
@@ -237,7 +203,7 @@
 			children = (
 				60DC0F8B19A8D9FD0005BAB4 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,24 +239,6 @@
 			productName = Relate;
 			productReference = 60DC0F4419A8CB5E0005BAB4 /* Relate.app */;
 			productType = "com.apple.product-type.application";
-		};
-		60DC0F5519A8CB5E0005BAB4 /* RelateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 60DC0F6319A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "RelateTests" */;
-			buildPhases = (
-				60DC0F5219A8CB5E0005BAB4 /* Sources */,
-				60DC0F5319A8CB5E0005BAB4 /* Frameworks */,
-				60DC0F5419A8CB5E0005BAB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				60DC0F5819A8CB5E0005BAB4 /* PBXTargetDependency */,
-			);
-			name = RelateTests;
-			productName = RelateTests;
-			productReference = 60DC0F5619A8CB5E0005BAB4 /* RelateTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */ = {
 			isa = PBXNativeTarget;
@@ -340,10 +288,6 @@
 					60DC0F4319A8CB5E0005BAB4 = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					60DC0F5519A8CB5E0005BAB4 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 60DC0F4319A8CB5E0005BAB4;
-					};
 					60DC0F7B19A8D9FD0005BAB4 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -367,7 +311,6 @@
 			projectRoot = "";
 			targets = (
 				60DC0F4319A8CB5E0005BAB4 /* Relate */,
-				60DC0F5519A8CB5E0005BAB4 /* RelateTests */,
 				60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */,
 				60DC0F8519A8D9FD0005BAB4 /* TinkerQuestTests */,
 			);
@@ -380,13 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		60DC0F5419A8CB5E0005BAB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,20 +353,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60DC0F5219A8CB5E0005BAB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60DC0F5D19A8CB5E0005BAB4 /* RelateTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		60DC0F7719A8D9FD0005BAB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				60DC0F9B19A8DA550005BAB4 /* Room.swift in Sources */,
 				60DC0F9C19A8DA550005BAB4 /* Item.swift in Sources */,
+				606E591919A8E31700C2B979 /* CommandInterpreter.swift in Sources */,
 				60DC0F9D19A8DA550005BAB4 /* TinkerObject.swift in Sources */,
 				60DC0FA119A8DE420005BAB4 /* TQ.swift in Sources */,
 				60DC0F9E19A8DA550005BAB4 /* TinkerQuest.swift in Sources */,
@@ -448,11 +377,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		60DC0F5819A8CB5E0005BAB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60DC0F4319A8CB5E0005BAB4 /* Relate */;
-			targetProxy = 60DC0F5719A8CB5E0005BAB4 /* PBXContainerItemProxy */;
-		};
 		60DC0F8819A8D9FD0005BAB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 60DC0F4319A8CB5E0005BAB4 /* Relate */;
@@ -555,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Relate/Info.plist;
+				INFOPLIST_FILE = "Relate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -566,43 +490,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Relate/Info.plist;
+				INFOPLIST_FILE = "Relate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		60DC0F6419A8CB5E0005BAB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RelateTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
-			};
-			name = Debug;
-		};
-		60DC0F6519A8CB5E0005BAB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RelateTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
 			};
 			name = Release;
 		};
@@ -618,7 +508,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TinkerQuest/Info.plist;
+				INFOPLIST_FILE = "TinkerQuest/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,7 +526,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TinkerQuest/Info.plist;
+				INFOPLIST_FILE = "TinkerQuest/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,7 +547,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TinkerQuestTests/Info.plist;
+				INFOPLIST_FILE = "TinkerQuestTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
@@ -671,7 +561,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TinkerQuestTests/Info.plist;
+				INFOPLIST_FILE = "TinkerQuestTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relate.app/Relate";
@@ -697,14 +587,7 @@
 				60DC0F6219A8CB5E0005BAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		60DC0F6319A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "RelateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				60DC0F6419A8CB5E0005BAB4 /* Debug */,
-				60DC0F6519A8CB5E0005BAB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60DC0F9419A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuest" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +596,7 @@
 				60DC0F9619A8D9FD0005BAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60DC0F9819A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuestTests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +605,7 @@
 				60DC0F9A19A8D9FD0005BAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

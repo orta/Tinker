@@ -7,7 +7,7 @@
 //
 
 public class TQ {
-    
+        
     public class func print(s:String){
         println(s)
     }

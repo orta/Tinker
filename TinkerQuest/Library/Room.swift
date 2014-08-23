@@ -34,7 +34,7 @@ public class Room: TinkerObject {
         self.westRoom = room
         room.eastRoom = self
     }
-    
+        
     func describeRoom() {
         for item in items {
             TQ.print(item.itemDescription);
