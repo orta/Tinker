@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		606E591919A8E31700C2B979 /* CommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606E591819A8E31700C2B979 /* CommandInterpreter.swift */; };
+		60AA038919A90C9800610BC8 /* ConsoleDisplayAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA038819A90C9800610BC8 /* ConsoleDisplayAdaptor.swift */; };
+		60AA038B19A91B3300610BC8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA038A19A91B3300610BC8 /* Person.swift */; };
 		60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */; };
 		60DC0F6719A8CBA50005BAB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */; };
 		60DC0F6F19A8CE660005BAB4 /* RelateGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */; };
@@ -18,7 +20,7 @@
 		60DC0F9B19A8DA550005BAB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7019A8D45E0005BAB4 /* Room.swift */; };
 		60DC0F9C19A8DA550005BAB4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7219A8D64E0005BAB4 /* Item.swift */; };
 		60DC0F9D19A8DA550005BAB4 /* TinkerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */; };
-		60DC0F9E19A8DA550005BAB4 /* TinkerQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */; };
+		60DC0F9E19A8DA550005BAB4 /* Tinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6B19A8CC7C0005BAB4 /* Tinker.swift */; };
 		60DC0F9F19A8DB030005BAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */; };
 		60DC0FA119A8DE420005BAB4 /* TQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0FA019A8DE420005BAB4 /* TQ.swift */; };
 /* End PBXBuildFile section */
@@ -63,12 +65,14 @@
 
 /* Begin PBXFileReference section */
 		606E591819A8E31700C2B979 /* CommandInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInterpreter.swift; sourceTree = "<group>"; };
+		60AA038819A90C9800610BC8 /* ConsoleDisplayAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleDisplayAdaptor.swift; sourceTree = "<group>"; };
+		60AA038A19A91B3300610BC8 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		60DC0F4419A8CB5E0005BAB4 /* Relate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC0F4819A8CB5E0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinkerQuest.swift; sourceTree = "<group>"; };
+		60DC0F6B19A8CC7C0005BAB4 /* Tinker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tinker.swift; sourceTree = "<group>"; };
 		60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateGame.swift; sourceTree = "<group>"; };
 		60DC0F7019A8D45E0005BAB4 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		60DC0F7219A8D64E0005BAB4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -155,9 +159,11 @@
 				60DC0F7019A8D45E0005BAB4 /* Room.swift */,
 				60DC0F7219A8D64E0005BAB4 /* Item.swift */,
 				60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */,
-				60DC0F6B19A8CC7C0005BAB4 /* TinkerQuest.swift */,
+				60DC0F6B19A8CC7C0005BAB4 /* Tinker.swift */,
 				60DC0FA019A8DE420005BAB4 /* TQ.swift */,
 				606E591819A8E31700C2B979 /* CommandInterpreter.swift */,
+				60AA038819A90C9800610BC8 /* ConsoleDisplayAdaptor.swift */,
+				60AA038A19A91B3300610BC8 /* Person.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -357,12 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AA038919A90C9800610BC8 /* ConsoleDisplayAdaptor.swift in Sources */,
 				60DC0F9B19A8DA550005BAB4 /* Room.swift in Sources */,
 				60DC0F9C19A8DA550005BAB4 /* Item.swift in Sources */,
 				606E591919A8E31700C2B979 /* CommandInterpreter.swift in Sources */,
 				60DC0F9D19A8DA550005BAB4 /* TinkerObject.swift in Sources */,
 				60DC0FA119A8DE420005BAB4 /* TQ.swift in Sources */,
-				60DC0F9E19A8DA550005BAB4 /* TinkerQuest.swift in Sources */,
+				60AA038B19A91B3300610BC8 /* Person.swift in Sources */,
+				60DC0F9E19A8DA550005BAB4 /* Tinker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

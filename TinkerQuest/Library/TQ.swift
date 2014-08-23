@@ -12,4 +12,12 @@ public class TQ {
         println(s)
     }
     
+    public class func header(s:String){
+        println(s)
+    }
+
+    public class func title(s:String){
+        println(s)
+    }
+
 }

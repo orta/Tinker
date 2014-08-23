@@ -9,6 +9,21 @@
 import UIKit
 import TinkerQuest
 
+class ConsoleDisplay: DisplayAdaptor {
+    func print(string:String) {
+        println(" " + string)
+    }
+    
+    func heading(string:String) {
+        println(string)
+    }
+    
+    func title(string:String) {
+        println(string)
+        println()
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -17,9 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
 
         let relate = RelateGame()
-        let dote = TinkerQuest(game:relate)
-        
-        dote.startGame()
+        let display = ConsoleDisplay()
+
+        let tinker = Tinker(game:relate, display: display)
+        tinker.startGameInRoom(room: Room)
         
         return true
     }

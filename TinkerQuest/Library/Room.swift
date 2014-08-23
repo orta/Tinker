@@ -8,13 +8,17 @@
 
 public class Room: TinkerObject {
    
-    var northRoom:Room?
-    var eastRoom:Room?
-    var westRoom:Room?
-    var southRoom:Room?
+    public var roomDescription:String?
     
-    var items = [Item]()
-
+    public var northRoom:Room?
+    public var eastRoom:Room?
+    public var westRoom:Room?
+    public var southRoom:Room?
+    
+    public var items:[Item] = []
+    public var people:[Person] = []
+    public var allObjects:[TinkerObject] = []
+    
     public func connectNorth(room:Room) {
         self.northRoom = room
         room.southRoom = self
@@ -35,10 +39,31 @@ public class Room: TinkerObject {
         room.eastRoom = self
     }
         
-    func describeRoom() {
+    func describeInsideRoom() {
         for item in items {
             TQ.print(item.itemDescription);
         }
     }
     
+    override public func respondToCommand(command: String) -> Bool {
+        for object in allObjects {
+            if object.respondToCommand(command) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    public func addPerson(person:Person) {
+        people.append(person)
+        allObjects.append(person)
+    }
+    
+    public func addItem(item:Item) {
+        items.append(item)
+        allObjects.append(item)
+    }
+    
+    
+
 }
