@@ -15,7 +15,7 @@ public class TinkerObject {
     
     public init(name:String){
         self.name = name;
-        self.id = name.lowercaseString
+        self.id = name
     }
     
     public func respondToCommand(command:String)  -> Bool {

@@ -10,70 +10,20 @@
 		606E591919A8E31700C2B979 /* CommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606E591819A8E31700C2B979 /* CommandInterpreter.swift */; };
 		60AA038919A90C9800610BC8 /* ConsoleDisplayAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA038819A90C9800610BC8 /* ConsoleDisplayAdaptor.swift */; };
 		60AA038B19A91B3300610BC8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA038A19A91B3300610BC8 /* Person.swift */; };
-		60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */; };
-		60DC0F6719A8CBA50005BAB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */; };
-		60DC0F6F19A8CE660005BAB4 /* RelateGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */; };
 		60DC0F8119A8D9FD0005BAB4 /* TinkerQuest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DC0F8019A8D9FD0005BAB4 /* TinkerQuest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60DC0F8D19A8D9FD0005BAB4 /* TinkerQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F8C19A8D9FD0005BAB4 /* TinkerQuestTests.swift */; };
-		60DC0F9019A8D9FD0005BAB4 /* TinkerQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */; };
-		60DC0F9119A8D9FD0005BAB4 /* TinkerQuest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		60DC0F9B19A8DA550005BAB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7019A8D45E0005BAB4 /* Room.swift */; };
 		60DC0F9C19A8DA550005BAB4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7219A8D64E0005BAB4 /* Item.swift */; };
 		60DC0F9D19A8DA550005BAB4 /* TinkerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */; };
 		60DC0F9E19A8DA550005BAB4 /* Tinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F6B19A8CC7C0005BAB4 /* Tinker.swift */; };
-		60DC0F9F19A8DB030005BAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */; };
 		60DC0FA119A8DE420005BAB4 /* TQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC0FA019A8DE420005BAB4 /* TQ.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		60DC0F8719A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60DC0F4319A8CB5E0005BAB4;
-			remoteInfo = Relate;
-		};
-		60DC0F8E19A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60DC0F7B19A8D9FD0005BAB4;
-			remoteInfo = TinkerQuest;
-		};
-		60DC0F9219A8D9FD0005BAB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60DC0F3C19A8CB5E0005BAB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60DC0F7B19A8D9FD0005BAB4;
-			remoteInfo = TinkerQuest;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		60DC0F9719A8D9FD0005BAB4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				60DC0F9119A8D9FD0005BAB4 /* TinkerQuest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		606E591819A8E31700C2B979 /* CommandInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInterpreter.swift; sourceTree = "<group>"; };
 		60AA038819A90C9800610BC8 /* ConsoleDisplayAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleDisplayAdaptor.swift; sourceTree = "<group>"; };
 		60AA038A19A91B3300610BC8 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		60DC0F4419A8CB5E0005BAB4 /* Relate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		60DC0F4819A8CB5E0005BAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		60DC0F6B19A8CC7C0005BAB4 /* Tinker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tinker.swift; sourceTree = "<group>"; };
-		60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateGame.swift; sourceTree = "<group>"; };
 		60DC0F7019A8D45E0005BAB4 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		60DC0F7219A8D64E0005BAB4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		60DC0F7419A8D6C10005BAB4 /* TinkerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinkerObject.swift; sourceTree = "<group>"; };
@@ -88,14 +38,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		60DC0F4119A8CB5E0005BAB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60DC0F9019A8D9FD0005BAB4 /* TinkerQuest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		60DC0F7819A8D9FD0005BAB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				60DC0F7619A8D9800005BAB4 /* TinkerGround.playground */,
-				60DC0F4619A8CB5E0005BAB4 /* Relate */,
 				60DC0F7D19A8D9FD0005BAB4 /* TinkerQuest */,
 				60DC0F8919A8D9FD0005BAB4 /* TinkerQuestTests */,
 				60DC0F4519A8CB5E0005BAB4 /* Products */,
@@ -127,30 +68,10 @@
 		60DC0F4519A8CB5E0005BAB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60DC0F4419A8CB5E0005BAB4 /* Relate.app */,
 				60DC0F7C19A8D9FD0005BAB4 /* TinkerQuest.framework */,
 				60DC0F8619A8D9FD0005BAB4 /* TinkerQuestTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		60DC0F4619A8CB5E0005BAB4 /* Relate */ = {
-			isa = PBXGroup;
-			children = (
-				60DC0F4919A8CB5E0005BAB4 /* AppDelegate.swift */,
-				60DC0F6D19A8CE570005BAB4 /* Game */,
-				60DC0F5019A8CB5E0005BAB4 /* Images.xcassets */,
-				60DC0F4719A8CB5E0005BAB4 /* Supporting Files */,
-			);
-			path = Relate;
-			sourceTree = "<group>";
-		};
-		60DC0F4719A8CB5E0005BAB4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				60DC0F4819A8CB5E0005BAB4 /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		60DC0F6819A8CBD00005BAB4 /* Library */ = {
@@ -166,15 +87,6 @@
 				60AA038A19A91B3300610BC8 /* Person.swift */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		60DC0F6D19A8CE570005BAB4 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-				60DC0F6619A8CBA50005BAB4 /* GameViewController.swift */,
-				60DC0F6E19A8CE660005BAB4 /* RelateGame.swift */,
-			);
-			path = Game;
 			sourceTree = "<group>";
 		};
 		60DC0F7D19A8D9FD0005BAB4 /* TinkerQuest */ = {
@@ -226,26 +138,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		60DC0F4319A8CB5E0005BAB4 /* Relate */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 60DC0F6019A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "Relate" */;
-			buildPhases = (
-				60DC0F4019A8CB5E0005BAB4 /* Sources */,
-				60DC0F4119A8CB5E0005BAB4 /* Frameworks */,
-				60DC0F4219A8CB5E0005BAB4 /* Resources */,
-				60DC0F9719A8D9FD0005BAB4 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				60DC0F8F19A8D9FD0005BAB4 /* PBXTargetDependency */,
-				60DC0F9319A8D9FD0005BAB4 /* PBXTargetDependency */,
-			);
-			name = Relate;
-			productName = Relate;
-			productReference = 60DC0F4419A8CB5E0005BAB4 /* Relate.app */;
-			productType = "com.apple.product-type.application";
-		};
 		60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60DC0F9419A8D9FD0005BAB4 /* Build configuration list for PBXNativeTarget "TinkerQuest" */;
@@ -275,7 +167,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				60DC0F8819A8D9FD0005BAB4 /* PBXTargetDependency */,
 			);
 			name = TinkerQuestTests;
 			productName = TinkerQuestTests;
@@ -291,9 +182,6 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Orta;
 				TargetAttributes = {
-					60DC0F4319A8CB5E0005BAB4 = {
-						CreatedOnToolsVersion = 6.0;
-					};
 					60DC0F7B19A8D9FD0005BAB4 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -316,7 +204,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60DC0F4319A8CB5E0005BAB4 /* Relate */,
 				60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */,
 				60DC0F8519A8D9FD0005BAB4 /* TinkerQuestTests */,
 			);
@@ -324,14 +211,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		60DC0F4219A8CB5E0005BAB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60DC0F5119A8CB5E0005BAB4 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		60DC0F7A19A8D9FD0005BAB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,16 +228,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		60DC0F4019A8CB5E0005BAB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60DC0F9F19A8DB030005BAB4 /* AppDelegate.swift in Sources */,
-				60DC0F6719A8CBA50005BAB4 /* GameViewController.swift in Sources */,
-				60DC0F6F19A8CE660005BAB4 /* RelateGame.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		60DC0F7719A8D9FD0005BAB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,24 +252,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		60DC0F8819A8D9FD0005BAB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60DC0F4319A8CB5E0005BAB4 /* Relate */;
-			targetProxy = 60DC0F8719A8D9FD0005BAB4 /* PBXContainerItemProxy */;
-		};
-		60DC0F8F19A8D9FD0005BAB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */;
-			targetProxy = 60DC0F8E19A8D9FD0005BAB4 /* PBXContainerItemProxy */;
-		};
-		60DC0F9319A8D9FD0005BAB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60DC0F7B19A8D9FD0005BAB4 /* TinkerQuest */;
-			targetProxy = 60DC0F9219A8D9FD0005BAB4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		60DC0F5E19A8CB5E0005BAB4 /* Debug */ = {
@@ -479,28 +330,6 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		60DC0F6119A8CB5E0005BAB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Relate/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		60DC0F6219A8CB5E0005BAB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Relate/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -584,15 +413,6 @@
 			buildConfigurations = (
 				60DC0F5E19A8CB5E0005BAB4 /* Debug */,
 				60DC0F5F19A8CB5E0005BAB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		60DC0F6019A8CB5E0005BAB4 /* Build configuration list for PBXNativeTarget "Relate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				60DC0F6119A8CB5E0005BAB4 /* Debug */,
-				60DC0F6219A8CB5E0005BAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

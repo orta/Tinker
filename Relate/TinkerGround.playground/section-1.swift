@@ -1,4 +1,4 @@
-import TinkerQuest
+import Tinker
 
 let display = ConsoleDisplayAdaptor()
 
