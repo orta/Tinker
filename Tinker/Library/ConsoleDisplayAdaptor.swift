@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Orta. All rights reserved.
 //
 
+/// A default Adaptor that shows the game output as a collection of
+/// printlns with a little bit of formatting
+
 public class ConsoleDisplayAdaptor: DisplayAdaptor {
     
     public init() {
@@ -30,8 +33,12 @@ public class ConsoleDisplayAdaptor: DisplayAdaptor {
     }
     
     public func command(string:String) {
-        print("")
-        print("> \(string)")
+        println("")
+        println("> \(string)")
+    }
+
+    public func error(string:String) {
+        println("ERROR > \(string)")
     }
     
 }

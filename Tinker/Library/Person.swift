@@ -8,7 +8,7 @@
 
 public class Person : TinkerObject {
     
-    public var playerEntersSameRoom: (() -> ())?
-    public var respondToPlayerForTheFirstTime: (() -> ())?
+    public var playerEntersSameRoom: voidClosure?
+    public var respondToPlayerForTheFirstTime: voidClosure?
     
 }

@@ -10,15 +10,26 @@ public typealias voidClosure = () -> Void
 
 public class TinkerObject {
     public let name:String
-    public let id:String
-    var inlineResponses:Dictionary <String, voidClosure> = [String: voidClosure]()
+    public var id:String
+    public var heldObjects:[TinkerObject] = []
+    
+    private var inlineResponses:Dictionary <String, voidClosure> = [String: voidClosure]()
     
     public init(name:String){
         self.name = name;
-        self.id = name
+        self.id = name.lowercaseString
     }
     
-    public func respondToCommand(command:String)  -> Bool {
+    public func respondToCommand(command: String) -> Bool {
+        for object in heldObjects {
+            if object.respondsToCommand(command) {
+                return true
+            }
+        }
+        return false
+    }
+
+    private func respondsToCommand(command:String)  -> Bool {
         for key in inlineResponses.keys {
             if key == command {
                 inlineResponses[key]!()

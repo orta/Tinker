@@ -21,6 +21,9 @@ public protocol DisplayAdaptor {
     
     /// Show the users input
     func command(string:String)
+    
+    /// Show the something meant to be a wrong input
+    func error(string:String)
 }
 
 public protocol Game {
@@ -31,20 +34,22 @@ public protocol Game {
     var gameDescription: String { get }
     
     /// The callback that you can build the games rooms / objects inside
-    func ready() -> Room
+    func ready(display:DisplayAdaptor) -> Room
 }
 
 public class Tinker {
     public let game:Game
     public let display:DisplayAdaptor
-
+    public let player:Player
+    
     public var rooms = [Room]()
     public var currentRoom:Room
     
     public init(game:Game, display:DisplayAdaptor) {
         self.game = game
         self.display = display
-        self.currentRoom = game.ready()
+        self.player = Player()
+        self.currentRoom = game.ready(display)
     }
     
     /// Start the game

@@ -17,7 +17,8 @@ public class Room: TinkerObject {
     
     public var items:[Item] = []
     public var people:[Person] = []
-    public var allObjects:[TinkerObject] = []
+    
+    var visited = false
     
     public func connectNorth(room:Room) {
         self.northRoom = room
@@ -38,32 +39,36 @@ public class Room: TinkerObject {
         self.westRoom = room
         room.eastRoom = self
     }
-        
+
     func describeInsideRoom() {
         for item in items {
-            TQ.print(item.itemDescription);
+            TQ.print(item.descriptionInRoom);
         }
     }
-    
-    override public func respondToCommand(command: String) -> Bool {
-        for object in allObjects {
-            if object.respondToCommand(command) {
-                return true
-            }
-        }
-        return false
-    }
-    
+        
     public func addPerson(person:Person) {
         people.append(person)
-        allObjects.append(person)
+        heldObjects.append(person)
     }
     
     public func addItem(item:Item) {
         items.append(item)
-        allObjects.append(item)
+        heldObjects.append(item)
     }
     
+    public func pickUpItem(itemID:String) {
+        if let item = itemForID(itemID) {
+            heldObjects.removeObject(item)
+            item.removeObject(item)
+        }
+    }
     
-
+    func itemForID(itemID:String) -> Item? {
+        for item in items {
+            if item.id == itemID {
+                return item
+            }
+        }
+        return nil
+    }
 }

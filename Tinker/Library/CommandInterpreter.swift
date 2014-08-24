@@ -6,13 +6,16 @@
 //  Copyright (c) 2014 Orta. All rights reserved.
 //
 
+import Foundation
+
 enum AppCommands : String {
     case North = "north", N = "n",
          South = "south", S = "s",
-         West = "west", W = "w",
-         Look = "look", L = "l",
-         East = "east", E = "e",
-         Help = "help", H = "h"
+         West = "west",   W = "w",
+         Look = "look",   L = "l",
+         East = "east",   E = "e",
+         Get = "get",     G = "g",
+         Help = "help",   H = "h"
 }
 
 public class CommandInterpreter {
@@ -26,7 +29,9 @@ public class CommandInterpreter {
     public func parse(input:String) {
         self.tinker.display.command(input)
 
-        if let appCommand = AppCommands.fromRaw(input) {
+        let params = input.componentsSeparatedByString(" ")
+        
+        if let appCommand = AppCommands.fromRaw(params.first!) {
             switch appCommand {
                 case .Help, .H:
                     help()
@@ -45,11 +50,22 @@ public class CommandInterpreter {
                 
                 case .Look, .L:
                     look()
+                
+                case .Get, .G:
+                    if countElements(params) > 1 {
+                        get(params[1])
+                    } else {
+                        error("Get what?")
+                    }
             }
             return
         }
         
-        tinker.currentRoom.respondToCommand(input)
+        if tinker.currentRoom.respondToCommand(input) { return }
+        if tinker.player.respondToCommand(input) { return }
+
+        
+        tinker.display.print("Nothing happened")
     }
     
     
@@ -67,6 +83,14 @@ public class CommandInterpreter {
     
     func west() {
         self.moveToRoom(tinker.currentRoom.westRoom)
+    }
+    
+    func get(item:String) {
+        tinker.currentRoom.pickUpItem(item)
+    }
+    
+    func error(message:String) {
+        tinker.display.error(message)
     }
     
     func moveToRoom(room:Room?){
