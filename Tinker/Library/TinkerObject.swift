@@ -8,7 +8,7 @@
 
 public typealias voidClosure = () -> Void
 
-public class TinkerObject {
+public class TinkerObject: Equatable {
     public let name:String
     public var id:String
     public var heldObjects:[TinkerObject] = []
@@ -42,5 +42,8 @@ public class TinkerObject {
     public func addResponseToCommand(to:String, with:voidClosure ){
         inlineResponses[to] = with
     }
+}
 
+public func ==(lhs: TinkerObject, rhs: TinkerObject) -> Bool {
+    return lhs.id == rhs.id
 }

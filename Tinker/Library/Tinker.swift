@@ -37,6 +37,8 @@ public protocol Game {
     func ready(display:DisplayAdaptor) -> Room
 }
 
+private var _sharedTinkering:Tinker?
+
 public class Tinker {
     public let game:Game
     public let display:DisplayAdaptor
@@ -45,11 +47,17 @@ public class Tinker {
     public var rooms = [Room]()
     public var currentRoom:Room
     
+    class var sharedInstance : Tinker {
+        return _sharedTinkering!
+    }
+    
     public init(game:Game, display:DisplayAdaptor) {
         self.game = game
         self.display = display
         self.player = Player()
         self.currentRoom = game.ready(display)
+
+        _sharedTinkering = self
     }
     
     /// Start the game

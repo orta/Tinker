@@ -58,8 +58,14 @@ public class Room: TinkerObject {
     
     public func pickUpItem(itemID:String) {
         if let item = itemForID(itemID) {
-            heldObjects.removeObject(item)
-            item.removeObject(item)
+            heldObjects.remove(item)
+            items.remove(item)
+
+            if item.onPickUp != nil {
+                item.onPickUp!()
+            }
+            
+            Tinker.sharedInstance.player.addItem(item)
         }
     }
     

@@ -49,6 +49,10 @@ class RelateGame: Game {
             display.print("Really? You're putting it down?")
         }
         
+        keytar.addResponseToCommand("play keytar") {
+            display.print("Damn you're good.")
+        }
+        
         let dude:Person = Person(name: "Dude")
         dude.respondToPlayerForTheFirstTime = {
             display.say("Dude", message: "Hey there stranger")
@@ -78,3 +82,6 @@ cmd.parse("hello ")
 
 cmd.parse("west")
 cmd.parse("get keytar")
+cmd.parse("play keytar")
+
+

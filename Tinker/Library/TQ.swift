@@ -9,15 +9,15 @@
 public class TQ {
         
     public class func print(s:String){
-        println(s)
+        Tinker.sharedInstance.display.print(s)
     }
     
     public class func header(s:String){
-        println(s)
+        Tinker.sharedInstance.display.heading(s)
     }
 
     public class func title(s:String){
-        println(s)
+        Tinker.sharedInstance.display.title(s)
     }
 
 }

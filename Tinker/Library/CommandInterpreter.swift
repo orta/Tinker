@@ -64,7 +64,6 @@ public class CommandInterpreter {
         if tinker.currentRoom.respondToCommand(input) { return }
         if tinker.player.respondToCommand(input) { return }
 
-        
         tinker.display.print("Nothing happened")
     }
     

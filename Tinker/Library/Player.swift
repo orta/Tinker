@@ -22,9 +22,8 @@ public class Player : TinkerObject {
     }
     
     public func removeItem(item:Item) {
-//        inventory.(item)
-//        heldObjects.append(item)
-
+        inventory.remove(item)
+        heldObjects.remove(item)
     }
     
     public func describeInventory() {
