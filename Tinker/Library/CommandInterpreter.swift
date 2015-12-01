@@ -10,65 +10,65 @@ import Foundation
 
 enum AppCommands : String {
     case North = "north", N = "n",
-         South = "south", S = "s",
-         West = "west",   W = "w",
-         Look = "look",   L = "l",
-         East = "east",   E = "e",
-         Get = "get",     G = "g",
-         Help = "help",   H = "h"
+    South = "south", S = "s",
+    West = "west",   W = "w",
+    Look = "look",   L = "l",
+    East = "east",   E = "e",
+    Get = "get",     G = "g",
+    Help = "help",   H = "h"
 }
 
 public class CommandInterpreter {
     
-    let tinker:Tinker
-
-    public init(tinker:Tinker) {
+    let tinker: Tinker
+    
+    public init(tinker: Tinker) {
         self.tinker = tinker
     }
     
-    public func parse(input:String) {
+    public func parse(input: String) {
         self.tinker.display.command(input)
-
+        
         let params = input.componentsSeparatedByString(" ")
         
-        if let appCommand = AppCommands.fromRaw(params.first!) {
+        if let appCommand = AppCommands(rawValue: params.first!) {
             switch appCommand {
-                case .Help, .H:
-                    help()
+            case .Help, .H:
+                help()
                 
-                case .North, .N:
-                    north()
+            case .North, .N:
+                north()
                 
-                case .South, .S:
-                    south()
+            case .South, .S:
+                south()
                 
-                case .East, .E:
-                    east()
+            case .East, .E:
+                east()
                 
-                case .West, .W:
-                    west()
+            case .West, .W:
+                west()
                 
-                case .Look, .L:
-                    look()
+            case .Look, .L:
+                look()
                 
-                case .Get, .G:
-                    if countElements(params) > 1 {
-                        get(params[1])
-                    } else {
-                        error("Get what?")
-                    }
+            case .Get, .G:
+                if params.count > 1 {
+                    get(params[1])
+                } else {
+                    error("Get what?")
+                }
             }
             return
         }
         
         if tinker.currentRoom.respondToCommand(input) { return }
         if tinker.player.respondToCommand(input) { return }
-
-        tinker.display.print("Nothing happened")
+        
+        tinker.display.puts("Nothing happened")
     }
     
     
-    func north(){
+    func north() {
         self.moveToRoom(tinker.currentRoom.northRoom)
     }
     
@@ -84,21 +84,20 @@ public class CommandInterpreter {
         self.moveToRoom(tinker.currentRoom.westRoom)
     }
     
-    func get(item:String) {
+    func get(item: String) {
         tinker.currentRoom.pickUpItem(item)
     }
     
-    func error(message:String) {
+    func error(message: String) {
         tinker.display.error(message)
     }
     
-    func moveToRoom(room:Room?){
+    func moveToRoom(room: Room?) {
         if let newRoom = room {
             tinker.currentRoom = newRoom
             tinker.movedRoom()
-            
         } else {
-            self.tinker.display.print("There is nothing in that direction")
+            self.tinker.display.puts("There is nothing in that direction")
         }
     }
     

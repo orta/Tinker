@@ -8,63 +8,63 @@
 
 public protocol DisplayAdaptor {
     /// Print out some text
-    func print(string:String)
-
+    func puts(string: String)
+    
     /// Print a header
-    func heading(string:String)
+    func heading(string: String)
     
     /// Print a title
-    func title(string:String)
+    func title(string: String)
     
-    /// Print 
-    func say(actor:String, message:String)
+    /// Print
+    func say(actor: String, message: String)
     
     /// Show the users input
-    func command(string:String)
+    func command(string: String)
     
     /// Show the something meant to be a wrong input
-    func error(string:String)
+    func error(string: String)
 }
 
 public protocol Game {
     /// Presented when the game loads
     var title: String { get }
-
+    
     /// Presented when the game loads
     var gameDescription: String { get }
     
     /// The callback that you can build the games rooms / objects inside
-    func ready(display:DisplayAdaptor) -> Room
+    func ready(display: DisplayAdaptor) -> Room
 }
 
-private var _sharedTinkering:Tinker?
+private var _sharedTinkering: Tinker?
 
 public class Tinker {
-    public let game:Game
-    public let display:DisplayAdaptor
-    public let player:Player
+    public let game: Game
+    public let display: DisplayAdaptor
+    public let player: Player
     
     public var rooms = [Room]()
-    public var currentRoom:Room
+    public var currentRoom: Room
     
     class var sharedInstance : Tinker {
         return _sharedTinkering!
     }
     
-    public init(game:Game, display:DisplayAdaptor) {
+    public init(game: Game, display: DisplayAdaptor) {
         self.game = game
         self.display = display
         self.player = Player()
         self.currentRoom = game.ready(display)
-
+        
         _sharedTinkering = self
     }
     
     /// Start the game
     public func startGame() {
         display.title("Title : \(game.title) ");
-        display.print("Description : \(game.gameDescription) ");
-        display.print("")
+        display.puts("Description : \(game.gameDescription) ");
+        display.puts("")
         
         self.movedRoom()
     }
@@ -81,5 +81,5 @@ public class Tinker {
     public func movedRoom() {
         describeSurroundings()
     }
-
+    
 }

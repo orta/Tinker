@@ -15,30 +15,30 @@ public class ConsoleDisplayAdaptor: DisplayAdaptor {
         
     }
     
-    public func print(string:String) {
-        println(" " + string)
+    public func puts(string: String) {
+        print(" " + string)
     }
     
-    public func heading(string:String) {
-        println(string)
+    public func heading(string: String) {
+        print(string)
     }
     
-    public func title(string:String) {
-        println(string)
-        println()
+    public func title(string: String) {
+        print(string)
+        print("")
     }
     
     public func say(actor: String, message: String) {
-        println("<\(actor)> \(message)")
+        print("<\(actor)> \(message)")
     }
     
-    public func command(string:String) {
-        println("")
-        println("> \(string)")
+    public func command(string: String) {
+        print("")
+        print("> \(string)")
     }
-
-    public func error(string:String) {
-        println("ERROR > \(string)")
+    
+    public func error(string: String) {
+        print("ERROR > \(string)")
     }
     
 }

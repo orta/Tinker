@@ -9,13 +9,13 @@
 public typealias voidClosure = () -> Void
 
 public class TinkerObject: Equatable {
-    public let name:String
-    public var id:String
-    public var heldObjects:[TinkerObject] = []
+    public let name: String
+    public var id: String
+    public var heldObjects: [TinkerObject] = []
     
-    private var inlineResponses:Dictionary <String, voidClosure> = [String: voidClosure]()
+    private var inlineResponses: Dictionary <String, voidClosure> = [String: voidClosure]()
     
-    public init(name:String){
+    public init(name: String) {
         self.name = name;
         self.id = name.lowercaseString
     }
@@ -28,8 +28,8 @@ public class TinkerObject: Equatable {
         }
         return false
     }
-
-    private func respondsToCommand(command:String)  -> Bool {
+    
+    private func respondsToCommand(command: String) -> Bool {
         for key in inlineResponses.keys {
             if key == command {
                 inlineResponses[key]!()
@@ -39,7 +39,7 @@ public class TinkerObject: Equatable {
         return false
     }
     
-    public func addResponseToCommand(to:String, with:voidClosure ){
+    public func addResponseToCommand(to: String, with: voidClosure) {
         inlineResponses[to] = with
     }
 }

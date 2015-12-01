@@ -12,17 +12,17 @@ import Foundation
 // Hopefully this will be less lame in the future
 
 extension Array {
-
+    
     mutating func remove <U: Equatable> (element: U) {
         let anotherSelf = self
-
+        
         removeAll(keepCapacity: true)
-
+        
         for current in anotherSelf {
-            if current as U != element {
+            if current as! U != element {
                 self.append(current)
             }
         }
     }
-
+    
 }
