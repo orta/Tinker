@@ -6,7 +6,7 @@ class RelateGame: Game {
     let gameDescription: String = "It can only go back and forwards in time. "
     
     /// The callback that you can build the games rooms / objects inside
-    func ready(display:DisplayAdaptor) -> Room {
+    func ready(display: DisplayAdaptor) -> Room {
         
         let initialRoom = Room(name: "Spawn");
         initialRoom.roomDescription = "There are clothes all over the floor, and you can hear people practicing to the north."
@@ -32,28 +32,31 @@ class RelateGame: Game {
         let keytar = Item(name: "Keytar")
         
         keytar.descriptionInRoom = "Your Keytar is hanging from the roof, how did it ever get there?"
-
-    
+        
         keytar.itemDescription = "Your Keytar is a beautiful 80s mix of a guitar and a keyboard allowing you to mash buttons without needing to stand behind a keyboard. A perfect mix."
         
+        keytar.addResponseToCommand("play ") {
+            display.puts("test")
+        }
+        
         keytar.addResponseToCommand("play keytar") {
-            display.print("You rock out on the Keytar for a while playing some George Michaels, no one seems to pay any attention though");
+            display.puts("You rock out on the Keytar for a while playing some George Michaels, no one seems to pay any attention though");
         }
         bathroom.addItem(keytar)
         
         keytar.onPickUp = {
-            display.print("You put the strap over your head and swing the Keytar over to your back");
+            display.puts("You put the strap over your head and swing the Keytar over to your back");
         }
         
         keytar.onDropDown = {
-            display.print("Really? You're putting it down?")
+            display.puts("Really? You're putting it down?")
         }
         
         keytar.addResponseToCommand("play keytar") {
-            display.print("Damn you're good.")
+            display.puts("Damn you're good.")
         }
         
-        let dude:Person = Person(name: "Dude")
+        let dude: Person = Person(name: "Dude")
         dude.respondToPlayerForTheFirstTime = {
             display.say("Dude", message: "Hey there stranger")
         }
@@ -67,12 +70,13 @@ class RelateGame: Game {
         initialRoom.connectNorth(hallway)
         return initialRoom
     }
+    
 }
 
 let display = ConsoleDisplayAdaptor()
 let relate = RelateGame()
-let tinker = Tinker(game:relate, display:display)
-let cmd = CommandInterpreter(tinker:tinker)
+let tinker = Tinker(game: relate, display: display)
+let cmd = CommandInterpreter(tinker: tinker)
 
 tinker.startGame()
 
@@ -83,5 +87,3 @@ cmd.parse("hello ")
 cmd.parse("west")
 cmd.parse("get keytar")
 cmd.parse("play keytar")
-
-

@@ -7,17 +7,17 @@
 //
 
 public class TQ {
-        
-    public class func print(s:String){
-        Tinker.sharedInstance.display.print(s)
+    
+    public class func print(s: String) {
+        Tinker.sharedInstance.display.puts(s)
     }
     
-    public class func header(s:String){
+    public class func header(s: String) {
         Tinker.sharedInstance.display.heading(s)
     }
-
-    public class func title(s:String){
+    
+    public class func title(s: String) {
         Tinker.sharedInstance.display.title(s)
     }
-
+    
 }
